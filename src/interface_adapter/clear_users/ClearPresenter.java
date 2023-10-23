@@ -3,21 +3,16 @@ package interface_adapter.clear_users;
 // TODO Complete me
 
 import interface_adapter.ViewManagerModel;
-import interface_adapter.signup.SignupState;
-import interface_adapter.signup.SignupViewModel;
 import use_case.clear_users.ClearOutputBoundary;
 import use_case.clear_users.ClearOutputData;
 
 public class ClearPresenter implements ClearOutputBoundary {
     private final ClearViewModel clearViewModel;
-    private final SignupViewModel signupViewModel;
     private ViewManagerModel viewManagerModel;
 
     public ClearPresenter(ClearViewModel clearViewModel,
-                          SignupViewModel signupViewModel,
                           ViewManagerModel viewManagerModel) {
         this.clearViewModel = clearViewModel;
-        this.signupViewModel = signupViewModel;
         this.viewManagerModel = viewManagerModel;
     }
     @Override

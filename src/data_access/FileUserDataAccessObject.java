@@ -13,7 +13,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class FileUserDataAccessObject implements SignupUserDataAccessInterface, LoginUserDataAccessInterface,
-        ClearUserDataAccessInterface{
+        ClearUserDataAccessInterface {
 
     private final File csvFile;
 

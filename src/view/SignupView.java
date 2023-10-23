@@ -15,6 +15,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import java.util.Arrays;
 
 public class SignupView extends JPanel implements ActionListener, PropertyChangeListener {
     public final String viewName = "sign up";
@@ -192,7 +193,7 @@ public class SignupView extends JPanel implements ActionListener, PropertyChange
         } else if (evt.getPropertyName().equals("clear")) {
             ClearState state = (ClearState) evt.getNewValue();
             if (state.getUserUsernames() != null) {
-                JOptionPane.showMessageDialog(this, state.getUserUsernames());
+                JOptionPane.showMessageDialog(this, Arrays.toString(state.getUserUsernames()));
             }
         }
     }
